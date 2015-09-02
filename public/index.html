@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+ <html ng-app="myApp">
+	<head>
+		 <title>Rafael Bar's app</title>
+		 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		 <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		 <script data-require="angular.js@1.3.15" data-semver="1.3.15" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	     <meta name="viewport" content="width=device-width,initial-scale=1">
+         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+         <script src="js/getPhotos.js"></script>
+	</head>
+	<body>
+		<div ng-controller="Ctrl"> 
+			<div class="page-header">
+		 		<h1>{{myModel.user}}'s Photos</h1>
+		    </div>
+		    <div id="container">
+			    <div class="block"  ng-repeat="x in greeting2">
+					<img ng-src='{{x.photos[0].alt_sizes[3].url}}'/>
+				</div>
+				
+			</div>	
+		</div>
+    	<script type="text/javascript" src="js/jquery.pinto.js"></script>
+    	<script type="text/javascript" src="assets/js/main.js"></script>
+    </body>
+</html>
+
